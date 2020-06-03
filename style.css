@@ -1,0 +1,55 @@
+body {
+background: #2D2E31;
+padding: 0;
+margin: 0;
+}
+
+.grid-calculator {
+background: black;
+display: grid;
+min-height: 100vh;
+justify-content: center;
+align-items: center;
+grid-template-columns: repeat(3, 100px);
+grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+}  
+.grid-calculator> button{
+cursor: pointer;
+width: 50px;
+height: 50px;
+margin: 15px;
+float: left;
+border-radius: 50%;
+border-width: 0;
+font-size: 15px;
+font-weight: bold;
+
+}
+.number, .delete, .decimal {
+background-color: rgb(66, 65, 65);
+color: rgb(236, 232, 232);
+}
+.results{
+grid-column: 1/ -1 ;
+background-color: rgb(7, 7, 7);
+color: white;
+display: flex;
+align-items: flex-end;
+justify-content: space-around;
+flex-direction: column;
+padding: 50px;
+word-wrap: break-word;
+word-break: break-all;
+}
+.results,  .current-output-value  {
+font-size: 2rem;
+color: white;
+}
+.operator,  .equal {
+background-color: rgb(233, 153, 62);
+color: white;
+}
+.results, .previous-output-value {
+color: white;
+font-size: 1rem;
+}
